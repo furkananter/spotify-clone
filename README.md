@@ -1,13 +1,11 @@
-# React with Bun runtime
-
-This is a React project bootstrapped with [bun](https://bun.sh/).
+# React with npm
 
 ## Getting Started
 
 ### Cloning the repo
 
 ```sh
-bun create react ./react-bun-app
+npm install
 ```
 
 ### Development
@@ -15,10 +13,10 @@ bun create react ./react-bun-app
 First, run the development server.
 
 ```
-bun dev
+npm start
 ```
 
 Open http://localhost:3000 with your browser to see the result.
 
-You can start editing the page by modifying src/App.jsx. The page auto-updates as you edit the file.
+You can start editing the page by modifying src/App.js. The page auto-updates as you edit the file.
 
