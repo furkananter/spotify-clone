@@ -12,5 +12,9 @@
     .wrapper {
         height: calc(100% - theme('spacing.24'));
         @apply flex;
-    }  
+    }
+    .active {
+        @apply bg-active text-white;
+    }
+     
 }
