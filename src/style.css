@@ -653,6 +653,10 @@ html,  body,  #root {
   width: 1.5rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -690,6 +694,11 @@ html,  body,  #root {
           column-gap: 1rem;
 }
 
+.gap-x-2 {
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -700,6 +709,10 @@ html,  body,  #root {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-t {
@@ -741,6 +754,10 @@ html,  body,  #root {
 
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
 }
 
 .bg-gradient-to-br {
