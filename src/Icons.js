@@ -78,6 +78,34 @@ const HeartIcon = ({ size }) => {
   );
 };
 
+const DownloadIcon = ({size}) => {
+	return (
+		<svg viewBox="0 0 24 24" width={size} height={size} xmlns="http://www.w3.org/2000/svg">
+			<path fill="currentColor"
+			      d="M11.5 0C5.149 0 0 5.148 0 11.5 0 17.851 5.149 23 11.5 23S23 17.851 23 11.5C23 5.148 17.851 0 11.5 0zm0 22C5.71 22 1 17.29 1 11.5S5.71 1 11.5 1 22 5.71 22 11.5 17.29 22 11.5 22zm.499-6.842V5h-1v10.149l-3.418-3.975-.758.652 4.678 5.44 4.694-5.439-.757-.653-3.439 3.984z"/>
+		</svg>
+	)
+}
+
+const PreviousButton = ({size}) => {
+	return (
+		<svg viewBox="0 0 24 24" width={size} height={size} xmlns="http://www.w3.org/2000/svg">
+			<path fill="currentColor"
+			      d="M15.957 2.793a1 1 0 010 1.414L8.164 12l7.793 7.793a1 1 0 11-1.414 1.414L5.336 12l9.207-9.207a1 1 0 011.414 0z"/>
+		</svg>
+	)
+}
+
+const ForwardButton = ({size}) => {
+	return (
+		<svg viewBox="0 0 24 24" width={size} height={size} xmlns="http://www.w3.org/2000/svg">
+			<path fill="currentColor"
+			      d="M8.043 2.793a1 1 0 000 1.414L15.836 12l-7.793 7.793a1 1 0 101.414 1.414L18.664 12 9.457 2.793a1 1 0 00-1.414 0z"/>
+		</svg>
+	)
+}
+
+
 const Icon = ({ name, size = 24 }) => {
   const icons = {
     home: HomeIcon,
@@ -85,6 +113,9 @@ const Icon = ({ name, size = 24 }) => {
     collection: CollectionIcon,
     plus: PlusIcon,
     heart: HeartIcon,
+    download: DownloadIcon,
+    previous: PreviousButton,
+    forward: ForwardButton,
   };
   const Component = icons[name];
   return <Component size={size} />;
