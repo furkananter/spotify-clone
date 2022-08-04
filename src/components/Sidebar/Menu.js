@@ -27,15 +27,16 @@ function Menu() {
                 </li>
                 <li>
                 {/*
-                 If you don't even think about using "isActive", you should think!
+                 //! If you don't even think about using "isActive", you should think!
                  Because you can't do this without "isActive". And if you don't use "isActive",
                  you can't give an active class to your NavLink.
 
-                 TODO: Go to the tailwind.css file and add the following line:
+                 //TODO: Go to the tailwind.css file and add the following line:
                     .active {
                         @apply bg-active text-white;
                     }
-                 TODO 2: Go back to the Menu.js and add the following line:
+        
+                 //TODO 2: Go back to the Menu.js and add the following line:
                     {({ isActive }) =>
                      "h-10 flex gap-x-4 items-center text-sm font-semibold text-link rounded hover:text-white px-4"
                      + (isActive ? ' active' : '')}
