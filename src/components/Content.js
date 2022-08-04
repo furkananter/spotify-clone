@@ -9,6 +9,7 @@ function Content(){
     return (
         <main className="flex-auto">
             <Navbar />
+            <div className="px-8 pt-2">
                 <Routes>
             { /* The new way to show the Route elements below the Routes (formerly Switch)*/ }
             { /* The elements are telling us about direct links */ }
@@ -16,6 +17,7 @@ function Content(){
                     <Route path="/search" element={<Search />} />
                     <Route path="/collection" element={<Collection />} />
                 </Routes> 
+            </div>
         </main>
     )
 }
