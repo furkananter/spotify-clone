@@ -1,4 +1,5 @@
  
+
 //TODO: This File contains whole of the Icons in our Spotify Clone Web App.
 //TODO: TR: Spotify Clone Uygulamamız için klasör içerisinde tüm Icon'ların bulunduğu yer bu dosyadır.
 //TODO: DE: In dieser Datei befinden sich alle Icons in unserem Spotify-Clone-Web-App.
@@ -110,7 +111,14 @@ const ForwardButton = ({size}) => {
 		</svg>
 	)
 }
-
+const DownDirIcon = ({size}) => {
+    return (
+        <svg viewBox="0 0 16 16" width={size} height={size} xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor"
+                    d="M14 6l-6 6-6-6h12z"/>
+        </svg>
+    )
+}
 
 const Icon = ({ name, size = 24 }) => {
   const icons = {
@@ -122,6 +130,7 @@ const Icon = ({ name, size = 24 }) => {
     download: DownloadIcon,
     previous: PreviousButton,
     forward: ForwardButton,
+    downDir : DownDirIcon
   };
   const Component = icons[name];
   return <Component size={size} />;

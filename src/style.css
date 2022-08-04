@@ -576,6 +576,14 @@ html,  body,  #root {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -615,6 +623,14 @@ html,  body,  #root {
 
 .ml-5 {
   margin-left: 1.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
 }
 
 .flex {
@@ -715,6 +731,10 @@ html,  body,  #root {
   border-radius: 9999px;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .border-t {
   border-top-width: 1px;
 }
@@ -750,6 +770,11 @@ html,  body,  #root {
 .bg-active {
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -792,6 +817,18 @@ html,  body,  #root {
 
 .p-2\.5 {
   padding: 0.625rem;
+}
+
+.p-px {
+  padding: 1px;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-6 {
@@ -851,6 +888,14 @@ html,  body,  #root {
   padding-right: 0.5rem;
 }
 
+.pr-0\.5 {
+  padding-right: 0.125rem;
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -885,6 +930,15 @@ html,  body,  #root {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.hover\:bg-active:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
