@@ -1,3 +1,9 @@
+ 
+//TODO: This File contains whole of the Icons in our Spotify Clone Web App.
+//TODO: TR: Spotify Clone Uygulamamız için klasör içerisinde tüm Icon'ların bulunduğu yer bu dosyadır.
+//TODO: DE: In dieser Datei befinden sich alle Icons in unserem Spotify-Clone-Web-App.
+
+
 const HomeIcon = ({ size }) => {
   return (
     <svg
