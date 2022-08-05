@@ -1,7 +1,17 @@
-function Section({title}) {
-    return(
+import { NavLink } from 'react-router-dom'
+
+function Section({ title, more = false }) {
+    return (
         <section>
-            <h3>{title}</h3>
+            <header className="flex items-center justify-between">
+                <h3 className="text-2xl text-white font-semibold tracking-tight">{title}</h3>
+                {more && (
+                    <NavLink className="text-sm font-semibold text-link uppercase" to={more}>
+                        see all
+                    </NavLink>
+                )
+            }
+            </header>
         </section>
     )
 }
