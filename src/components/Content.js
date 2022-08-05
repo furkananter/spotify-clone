@@ -9,7 +9,7 @@ function Content(){
     return (
         <main className="flex-auto">
             <Navbar />
-            <div className="px-8 pt-2">
+            <div className="px-8 pt-5">
                 <Routes>
             { /* The new way to show the Route elements below the Routes (formerly Switch)*/ }
             { /* The elements are telling us about direct links */ }
