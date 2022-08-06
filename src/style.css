@@ -584,6 +584,13 @@ html,  body,  #root {
   position: relative;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .top-full {
   top: 100%;
 }
@@ -617,12 +624,24 @@ html,  body,  #root {
   margin-top: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
 }
 
 .h-24 {
@@ -645,6 +664,18 @@ html,  body,  #root {
   height: 2rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-60 {
   width: 15rem;
 }
@@ -659,6 +690,18 @@ html,  body,  #root {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-auto {
@@ -704,6 +747,11 @@ html,  body,  #root {
 .gap-x-4 {
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
+}
+
+.gap-x-6 {
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
 }
 
 .overflow-auto {
@@ -789,12 +837,40 @@ html,  body,  #root {
   --tw-gradient-to: #93c5fd;
 }
 
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-center {
+  object-position: center;
+}
+
 .p-0\.5 {
   padding: 0.125rem;
 }
 
 .p-0 {
   padding: 0px;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-8 {
@@ -822,8 +898,8 @@ html,  body,  #root {
   padding-right: 1rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-6 {
@@ -834,8 +910,18 @@ html,  body,  #root {
   padding-right: 0.5rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pt-\[100\%\] {
+  padding-top: 100%;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-sm {
@@ -845,11 +931,6 @@ html,  body,  #root {
 
 .text-s {
   font-size: 0.813rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-semibold {
@@ -864,6 +945,11 @@ html,  body,  #root {
   letter-spacing: -0.025em;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-link {
   --tw-text-opacity: 1;
   color: rgb(179 179 179 / var(--tw-text-opacity));
@@ -872,11 +958,6 @@ html,  body,  #root {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-60 {
