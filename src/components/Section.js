@@ -20,10 +20,10 @@ function Section({ title, more = false,items }) {
                     key={item.id}
                     to={"/"}>
 
-                    <div className="pt-[100%] relative mb-4">
+                    <div className="pt-[100%] relative mb-4 ">
                         <img className="absolute inset-0 object-cover w-full h-full rounded" src={item.image} alt={item.title} />
-                        <button className="bg-primary w-10 h-10 rounded-full absolute bottom-2 group-hover:flex group-focus:flex right-2 flex items-center justify-center hidden">
-                            <Icon name="play" size={16}/>
+                        <button className="transition-button bg-primary w-10 h-10 rounded-full absolute bottom-2 group-hover:flex group-focus:flex right-2 items-center justify-center hidden">
+                            <Icon  name="play" size={16}/>
                         </button>
                     </div>
                     <h6 className="overflow-hidden overflow-ellipsis whitespace-nowrap text-base font-semibold">
