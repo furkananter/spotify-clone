@@ -20,7 +20,7 @@ function Auth() {
                             <Icon name="downDir" size={16} />
                         </span>
                     </Menu.Button>
-                    <Menu.Items className="w-48 rounded absolute top-full right-0 bg-active translate-y-2 z-1">
+                    <Menu.Items className="w-48 rounded absolute top-full right-0 bg-active translate-y-2 z-10">
                         <Menu.Item>
                             {({ active }) => (
                                 <a
