@@ -20,15 +20,15 @@ function Sidebar() {
                 <span className="w-6 h-6 flex items-center justify-center mr-4 bg-opacity-60 group-hover:bg-opacity-100 bg-white rounded-sm text-black">
                     <Icon name="plus" size={12}/>
                 </span>
-                    Çalma Listesi Oluştur
+                    Create Playlist
               </a>
           </li>
           <li>
               <a href="" className="py-2 px-6 flex items-center group font-semibold text-sm text-link hover:text-white">
                 <span className="w-6 h-6 flex items-center justify-center mr-4 opacity-60 group-hover:opacity-100 bg-gradient-to-br from-purple-700 to-blue-300 text-white bg-white rounded-sm">
-                    <Icon name="heart" size={12}/>
+                    <Icon name="heartFilled" size={12}/>
                 </span>
-                    Beğenilen Şarkılar
+                    Liked Songs
               </a> {/* end of a */}
           </li> {/* end of li */}
         </ul> {/* end of ul */}

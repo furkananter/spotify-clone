@@ -1,4 +1,3 @@
-import { Icon } from 'Icons';
 import Navigation from 'components/Navbar/Navigation'
 import Auth from 'components/Navbar/Auth'
 

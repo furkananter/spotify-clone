@@ -13,17 +13,17 @@ function Home(){
         {
             id: 2,
             title: 'Road-trip 🚘',
-            image: 'https://i.scdn.co/image/ab67706c0000da84686abc7d15d1972b6765a6dc',
+            image: 'https://i.scdn.co/image/ab67706c0000da846aed8fed9fc17a116c32da86',
             description: 'Road Road Road',
             type:'album',
 
         },
         {
             id: 3,
-            title: 'ee nabiyim',
-            image: 'https://i.scdn.co/image/ab67706c0000da844c621ab106de67d89b641cc9',
-            description: 'kaldı heveslerim kursağımda',
-            type:'artist',
+            title: 'Doge',
+            image: 'https://i1.sndcdn.com/artworks-Sok1hKQ08xcNGPxr-VBLMvA-t500x500.jpg',
+            description: 'NFT Music',
+            type:'album',
         },
         {
             id: 4,
@@ -34,15 +34,15 @@ function Home(){
         },
         {
             id: 5,
-            title: 'hypebeast 👟',
-            image: 'https://i.scdn.co/image/ab67706c0000da842b8a92a73ca3a70247282551',
-            description: 'Culture of Hypebeast',
-            type:'album',
+            title: 'Asmodeus',
+            image: 'https://i1.sndcdn.com/avatars-LVCe1uRxIp1qqQoh-DDmlzw-t500x500.jpg',
+            description: 'Artist',
+            type:'artist',
         },
     ]
 
     return (
-        <div>
+        <div className="grid gap-y-8">
             <Section 
             title="Recently played"
             more="/blabla"
