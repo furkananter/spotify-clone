@@ -7,7 +7,7 @@ import Collection from 'views/Collection';
 
 function Content(){
     return (
-        <main className="flex-auto">
+        <main className="flex-auto overflow-auto">
             <Navbar />
             <div className="px-8 pt-5">
                 <Routes>

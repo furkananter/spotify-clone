@@ -47,7 +47,17 @@ function Home(){
             title="Recently played"
             more="/blabla"
             items={items}
-             />        
+             />
+             <Section 
+            title="Shows to try"
+            more="/blabla"
+            items={items}
+             />
+             <Section 
+            title="Made for Furkan"
+            more="/blabla"
+            items={items}
+             />          
         </div>
     )
 }
