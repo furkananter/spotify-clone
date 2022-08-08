@@ -2,22 +2,21 @@ import { Icon } from 'Icons'
 import { Range, getTrackBackground } from 'react-range'
 import { useState } from 'react'
 import { useAudio } from 'react-use'
+import { secondsToTime } from 'utils'
 
 function Player() {
     const STEP = 0.1;
     const MIN = 0;
-    const MAX = 100;
-    const [values, setValues] = useState([50]);
+   
 
     const [audio, state, controls, ref] = useAudio({
-        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+        src: 'https://www.mboxdrive.com/Warriyo%20-%20Mortals%20(feat.%20Laura%20Brehm)%20[NCS%20Release].mp3',
       });
 
     return (
         <div className="flex items-center justify-between h-full px-4">
-            <div className="min-w-[11.25rem] w-[30%]">Sol
-                {JSON.stringify(state)}
-            
+            <div className="min-w-[11.25rem] w-[30%]">
+                Sol
             </div>
             <div className="max-w-[45.125rem] w-[40%] flex flex-col items-center">
                 <div className="flex items-center gap-x-2">
@@ -27,7 +26,9 @@ function Player() {
                     <button className="w-8 h-8 flex items-center justify-center text-opacity-70 hover:text-opacity-100 text-white ">
                         <Icon name="playerPrev" size={16} />
                     </button>
-                    <button className="w-8 h-8 flex bg-white rounded-full items-center justify-center text-black hover:scale-[1.06] ">
+                    <button
+                        onClick={controls.play} 
+                        className="w-8 h-8 flex bg-white rounded-full items-center justify-center text-black hover:scale-[1.06] ">
                         <Icon name="play" size={16} />
                     </button>
                     <button className="w-8 h-8 flex items-center justify-center text-opacity-70 hover:text-opacity-100 text-white ">
@@ -38,14 +39,17 @@ function Player() {
                     </button>
 
                 </div>
-                <div className="w-full">
+                <div className="w-full flex gap-x-2 mt-1.5 items-center">
                     {audio}
+                    <div className="text-[0.688rem] text-white text-opacity-70">
+                        {secondsToTime(state?.time)}
+                    </div>
                     <Range
-                        values={values}
+                        values={[state?.time]}
                         step={STEP}
                         min={MIN}
-                        max={MAX}
-                        onChange={(values) => setValues(values)}
+                        max={state?.duration || 1}
+                        onChange={(values) => controls.seek(values[0])}
                         renderTrack={({ props, children }) => (
                             <div
                                 onMouseDown={props.onMouseDown}
@@ -59,10 +63,10 @@ function Player() {
                                     style={{
                                     
                                         background: getTrackBackground({
-                                            values: values,
+                                            values: [state?.time],
                                             colors: ["#1db954", "#535353"],
                                             min: MIN,
-                                            max: MAX
+                                            max: [state?.duration] || 1,
                                         }),
                                     }}
                                 >
@@ -81,7 +85,10 @@ function Player() {
                             />
                         )}
                     />
-                </div>
+                    <div className="text-[0.688rem] text-white text-opacity-70">
+                        {secondsToTime(state?.duration)}
+                    </div>
+                </div>  
             </div>
             <div className="min-w-[11.25rem] w-[30%] flex justify-end">Sağ</div>
         </div>
