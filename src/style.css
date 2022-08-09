@@ -657,16 +657,16 @@ html,  body,  #root {
   margin-right: 1rem;
 }
 
+.mt-1\.5 {
+  margin-top: 0.375rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-1\.5 {
-  margin-top: 0.375rem;
 }
 
 .flex {
@@ -757,8 +757,12 @@ html,  body,  #root {
   width: ;
 }
 
-.w-\[0\.688rem\] {
-  width: 0.688rem;
+.w-\[5\.83\] {
+  width: 5.83;
+}
+
+.w-\[5\.813rem\] {
+  width: 5.813rem;
 }
 
 .min-w-\[11\.25rem\] {
@@ -767,6 +771,10 @@ html,  body,  #root {
 
 .max-w-\[45\.125rem\] {
   max-width: 45.125rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-auto {
@@ -1018,12 +1026,12 @@ html,  body,  #root {
   line-height: 1.25rem;
 }
 
-.text-s {
-  font-size: 0.813rem;
-}
-
 .text-\[0\.688rem\] {
   font-size: 0.688rem;
+}
+
+.text-s {
+  font-size: 0.813rem;
 }
 
 .font-semibold {
