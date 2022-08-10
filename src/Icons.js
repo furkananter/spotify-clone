@@ -284,6 +284,15 @@ const LyricsIcon = ({ size }) => {
     </svg>
   )
 }
+const arrowLeftIcon = ({ size }) => {
+  return (
+    <svg viewBox="0 0 16 16" width={size} height={size} xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M.47 11.03a.75.75 0 001.06 0L8 4.56l6.47 6.47a.75.75 0 101.06-1.06L8 2.44.47 9.97a.75.75 0 000 1.06z"
+        fill="currentColor" />
+    </svg>
+  )
+}
 
 //* TR: Kullanabilmemiz için tanımlamaları yaptığımz yer burasıdır.
 //* ENG: Here we define the definitions for our components.
@@ -319,6 +328,7 @@ const Icon = ({ name, size = 24 }) => {
     volumeNormal: VolumeNormalIcon,
     volumeFull: VolumeFullIcon,
     lyrics: LyricsIcon,
+    arrowLeft: arrowLeftIcon
   };
   const Component = icons[name];
   return <Component size={size} />;
