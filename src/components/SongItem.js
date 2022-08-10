@@ -5,7 +5,7 @@ import {setCurrent} from "stores/player";
 
 function SongItem({item}){
     const dispatch = useDispatch();
-    const { current } = useSelector(state => state.player);
+    const { current,playing, controls } = useSelector(state => state.player);
     const imageStyle = item => {
         switch (item.type) {
             case 'artist':
@@ -18,9 +18,17 @@ function SongItem({item}){
                 return 'rounded'
             }}
     const updateCurrent = () => {
-        dispatch(setCurrent(item));
+        if (current.id === item.id) {
+            if (playing){
+                dispatch(controls.pause())
+            }else{
+                dispatch(controls.play())
+            }
+        }else{
+            dispatch(setCurrent(item));
+        }
     }
-    const isCurrentItem = (current?.id === item.id )
+    const isCurrentItem = (current?.id === item.id && playing )
     return (
         <NavLink
         key={item.id}
@@ -28,7 +36,7 @@ function SongItem({item}){
         className={"bg-footer p-4 rounded hover:bg-active group"}
     >
         <div className="pt-[100%] relative mb-4">
-            <img src={item.image} className={`absolute inset-0 object-cover w-full h-full ${imageStyle(item)}`} />
+            <img src={item.image} className={`absolute inset-0 object-cover w-full h-full ${imageStyle(item)}`} alt="Songitem" />
             <button
                 onClick={updateCurrent}
                 className={`w-10 h-10 rounded-full bg-primary absolute group-hover:flex group-focus:flex bottom-2 right-2 items-center justify-center ${!isCurrentItem ? 'hidden' : 'flex'}`}>

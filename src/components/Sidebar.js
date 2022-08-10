@@ -2,10 +2,14 @@ import logo from "img/logo.svg";
 import { Icon } from "Icons";
 import Menu from "components/Sidebar/Menu";
 import Playlists from "components/Sidebar/Playlists";
+import SidebarCover from 'components/Sidebar/SidebarCover'
+import { useSelector } from 'react-redux'
 import DownloadApp from "components/Sidebar/DownloadApp";
 
 
 function Sidebar() {
+  const sidebar = useSelector(state => state.player.sidebar);
+
   return (
     <aside className="w-60 pt-6 flex flex-shrink-0 flex-col bg-black">
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
@@ -36,6 +40,9 @@ function Sidebar() {
 
       <Playlists /> {/* end of Playlists */}
       <DownloadApp />
+      {sidebar && (
+        <SidebarCover />
+      )}
     </aside>
   );
 }
