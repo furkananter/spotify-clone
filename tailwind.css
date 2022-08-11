@@ -19,5 +19,14 @@
     .transition-button{
         @apply transition ease-in-out delay-100 duration-300 hover:scale-150 hover:bg-gradient-to-r from-green-600 to-primary
     }
+    ::-webkit-scrollbar{
+        @apply w-2
+    }
+    ::-webkit-scrollbar-track{
+        @apply bg-black
+    }
+    ::-webkit-scrollbar-thumb{
+        @apply bg-primary rounded-full
+    }
      
 }

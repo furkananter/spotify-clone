@@ -435,6 +435,21 @@ html,  body,  #root {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 185 84 / var(--tw-bg-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1011,12 +1026,12 @@ html,  body,  #root {
   padding-top: 100%;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-2xl {
