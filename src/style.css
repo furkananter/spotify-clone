@@ -431,23 +431,26 @@ html,  body,  #root {
 .active {
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(29 185 84 / var(--tw-bg-opacity));
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 *, ::before, ::after {

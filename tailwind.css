@@ -14,19 +14,19 @@
         @apply flex;
     }
     .active {
-        @apply bg-active text-white;
+        @apply bg-active !text-white;
     }
     .transition-button{
         @apply transition ease-in-out delay-100 duration-300 hover:scale-150 hover:bg-gradient-to-r from-green-600 to-primary
     }
     ::-webkit-scrollbar{
-        @apply w-2
+        @apply w-4
     }
     ::-webkit-scrollbar-track{
-        @apply bg-black
+        @apply bg-transparent
     }
     ::-webkit-scrollbar-thumb{
-        @apply bg-primary rounded-full
+        @apply bg-gray-600 hover:bg-gray-500
     }
      
 }

@@ -33,7 +33,7 @@ function Menu() {
 
                  //TODO: Go to the tailwind.css file and add the following line:
                     .active {
-                        @apply bg-active text-white;
+                        @apply bg-active !text-white;
                     }
         
                  //TODO 2: Go back to the Menu.js and add the following line:
