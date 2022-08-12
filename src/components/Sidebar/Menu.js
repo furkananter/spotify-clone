@@ -2,6 +2,7 @@ import { Icon } from 'Icons';
 import { NavLink } from 'react-router-dom';
 
 function Menu() {
+
     return (
         <nav className="px-2">
             <ul className="flex flex-col">
