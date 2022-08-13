@@ -1,3 +1,5 @@
+import categories from 'data/categories'
+
 function Search(){
     return (
         <div>

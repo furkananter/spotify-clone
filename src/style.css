@@ -435,6 +435,13 @@ html,  body,  #root {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
+.\!active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -682,10 +689,6 @@ html,  body,  #root {
   margin-right: 0.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mr-auto {
   margin-right: auto;
 }
@@ -694,12 +697,8 @@ html,  body,  #root {
   margin-left: 1rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .flex {
@@ -754,10 +753,6 @@ html,  body,  #root {
   height: 2rem;
 }
 
-.h-11 {
-  height: 2.75rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -802,16 +797,12 @@ html,  body,  #root {
   width: 12rem;
 }
 
-.w-\[22\.75rem\] {
-  width: 22.75rem;
-}
-
 .w-12 {
   width: 3rem;
 }
 
-.w-11 {
-  width: 2.75rem;
+.w-\[22\.75rem\] {
+  width: 22.75rem;
 }
 
 .min-w-\[11\.25rem\] {
@@ -939,30 +930,13 @@ html,  body,  #root {
   border-radius: 1.5rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
 .border-t {
   border-top-width: 1px;
-}
-
-.border-none {
-  border-style: none;
 }
 
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .border-opacity-5 {
@@ -1086,16 +1060,8 @@ html,  body,  #root {
   padding-right: 0.5rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
 .pl-12 {
   padding-left: 3rem;
-}
-
-.pl-11 {
-  padding-left: 2.75rem;
 }
 
 .text-2xl {
@@ -1157,94 +1123,9 @@ html,  body,  #root {
   --tw-text-opacity: 0.7;
 }
 
-.placeholder-active::-webkit-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(40 40 40 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-active::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(40 40 40 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-black::-webkit-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-black::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-black\/50::-webkit-input-placeholder {
-  color: rgb(0 0 0 / 0.5);
-}
-
-.placeholder-black\/50::placeholder {
-  color: rgb(0 0 0 / 0.5);
-}
-
-.placeholder-black\/60::-webkit-input-placeholder {
-  color: rgb(0 0 0 / 0.6);
-}
-
-.placeholder-black\/60::placeholder {
-  color: rgb(0 0 0 / 0.6);
-}
-
-.placeholder-black\/70::-webkit-input-placeholder {
-  color: rgb(0 0 0 / 0.7);
-}
-
-.placeholder-black\/70::placeholder {
-  color: rgb(0 0 0 / 0.7);
-}
-
-.placeholder-black\/0::-webkit-input-placeholder {
-  color: rgb(0 0 0 / 0);
-}
-
-.placeholder-black\/0::placeholder {
-  color: rgb(0 0 0 / 0);
-}
-
-.placeholder-black\/80::-webkit-input-placeholder {
-  color: rgb(0 0 0 / 0.8);
-}
-
-.placeholder-black\/80::placeholder {
-  color: rgb(0 0 0 / 0.8);
-}
-
-.placeholder-gray-600::-webkit-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-600::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-700::-webkit-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-700::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-400::-webkit-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-400::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .placeholder-gray-500::-webkit-input-placeholder {
