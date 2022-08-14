@@ -27,6 +27,12 @@ function Navbar(){
                 //TODO: ENG: You are using searchRoute = useMatch("/search").
                 //TODO: DE: Sie verwenden searchRoute = useMatch("/search").
                 
+                //? Explanation for useMatch:
+                //? ENG: useMatch is a Hook that lets you find the current match of a route in your application.
+                //? DE: useMatch ist ein Hook, der Ihnen ermöglicht, die aktuelle Übereinstimmung einer Route in Ihrer Anwendung zu finden.
+                //? TR: useMatch doğru eşleşmenin yapılabilmesi sağlanan bir hook'tur. Yani searchRoute = useMatch("/search") şeklinde kullanılır.👇🏻
+                //? TR: ...Bu kullanımdan sonra aşağıda verildiği gibi searchRoute true döndürüyorsa, yani /search isteği atıyorsa, <Search /> komponentini gösteriyor.
+                
                 */}
             {(searchRoute && <Search />)}
             <Auth />

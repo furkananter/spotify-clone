@@ -9,7 +9,6 @@ function Section({ title, more = false,items }) {
             <div className="grid grid-cols-5 gap-x-6">
                 {items.map(item => (
                     <SongItem key={item.id} item={item} />
-                    
                 ))}
             </div>
         </section>

@@ -1,12 +1,21 @@
 import { Icon } from 'Icons'
 import CustomRange from '../CustomRange'
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useRef} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setControls, setSidebar , setPlaying} from 'stores/player'
-import { useAudio } from 'react-use'
+import { useAudio, useFullscreen, useToggle } from 'react-use'
 import { secondsToTime } from 'utils'
 
 function Player() {
+    // useRef fonksiyonu, bir componentin bir özelliğini bir değişkene atar.
+    // Örneğin, bir componentin bir özelliğini bir değişkene atarsak, componentin özelliğini değiştirmeye izin verir.
+    // fsRef, fullScreen Ref demektir, react-use kütüphanesindeki useFullscreen fonksiyonunun özelliğini kullanır.
+    // 
+    const fsRef = useRef()
+    const [show, toggle] = useToggle(false)
+    const isFullscreen = useFullscreen(fsRef, show, {onClose: () => toggle(false)})
+
+
     const { current, sidebar } = useSelector(state => state.player)
     const dispatch = useDispatch();
 
@@ -144,6 +153,9 @@ function Player() {
                 <button className="w-8 h-8 flex items-center justify-center text-opacity-70 hover:text-opacity-100 text-white ">
                     <Icon name="fullscreen" size={16} />
                 </button>
+            </div>
+            <div ref={fsRef}>
+                
             </div>
         </div>
     )

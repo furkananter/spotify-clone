@@ -14,7 +14,7 @@
         @apply flex;
     }
     .active {
-        @apply bg-active !text-white;
+        @apply !text-white;
     }
     .transition-button{
         @apply transition ease-in-out delay-100 duration-300 hover:scale-150 hover:bg-gradient-to-r from-green-600 to-primary

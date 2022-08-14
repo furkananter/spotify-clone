@@ -4,7 +4,6 @@
 //TODO: TR: Spotify Clone Uygulamamız için klasör içerisinde tüm Icon'ların bulunduğu yer bu dosyadır.
 //TODO: DE: In dieser Datei befinden sich alle Icons in unserem Spotify-Clone-Web-App.
 
-
 const HomeIcon = ({ size }) => {
   return (
     <svg
@@ -22,6 +21,7 @@ const HomeIcon = ({ size }) => {
 // TODO: ENG: Now, ActiveHomeIcon is unnecessary in this document but I'll use it.
 // TODO: TR: Şimdi, ActiveHomeIcon bu belgede kullanmak için gerekli değil ama kullanacağım.
 // TODO: DE: Jetzt ist ActiveHomeIcon nicht mehr in dieser Datei, aber ich werde ihn verwenden.
+
 const ActiveHomeIcon = ({ size }) => {
   return (
     <svg
@@ -351,9 +351,10 @@ const Icon = ({ name, size = 24 }) => {
     volumeFull: VolumeFullIcon,
     lyrics: LyricsIcon,
     arrowLeft: arrowLeftIcon
-  };
-  const Component = icons[name];
-  return <Component size={size} />;
-};
+  }
+  
+  const Component = icons[name]
+  return <Component size={size} />
+}
 
-export { Icon };
+export { Icon }
