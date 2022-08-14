@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setControls, setSidebar , setPlaying} from 'stores/player'
 import { useAudio, useFullscreen, useToggle } from 'react-use'
+import FullScreenPlayer from './FullScreenPlayer'
 import { secondsToTime } from 'utils'
 
 function Player() {
@@ -150,12 +151,17 @@ function Player() {
                         }}
                     />
                 </div>
-                <button className="w-8 h-8 flex items-center justify-center text-opacity-70 hover:text-opacity-100 text-white ">
+                <button onClick={toggle} className="w-8 h-8 flex items-center justify-center text-opacity-70 hover:text-opacity-100 text-white ">
                     <Icon name="fullscreen" size={16} />
                 </button>
             </div>
             <div ref={fsRef}>
-                
+                {isFullscreen &&
+                    (<FullScreenPlayer
+                        toggle={toggle}
+                        state={ state }
+                        controls={ controls }
+                />)}
             </div>
         </div>
     )
