@@ -9,7 +9,9 @@ module.exports = {
         active: '#282828',
         podcast: '#056952',
         link: '#b3b3b3',
-        footer: '#181818'
+        footer: '#181818',
+        scroll: '#4D4D4D',
+        scrollHover: '#808080',
       },
       fontSize: {
         s: '0.813rem',

@@ -26,7 +26,7 @@
         @apply bg-transparent
     }
     ::-webkit-scrollbar-thumb{
-        @apply bg-gray-600 hover:bg-gray-500
+        @apply bg-scroll hover:bg-scrollHover
     }
      
 }

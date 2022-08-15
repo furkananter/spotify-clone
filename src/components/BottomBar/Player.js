@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setControls, setSidebar , setPlaying} from 'stores/player'
 import { useAudio, useFullscreen, useToggle } from 'react-use'
-import FullScreenPlayer from './FullScreenPlayer'
+import FullScreenPlayer from '../FullScreenPlayer'
 import { secondsToTime } from 'utils'
 
 function Player() {
@@ -17,7 +17,7 @@ function Player() {
     const isFullscreen = useFullscreen(fsRef, show, {onClose: () => toggle(false)})
 
 
-    const { current, sidebar } = useSelector(state => state.player)
+    const { current, sidebar} = useSelector(state => state.player)
     const dispatch = useDispatch();
 
     // const [audio, state, controls ] = useAudio  // audio element
@@ -42,7 +42,7 @@ function Player() {
 
     useEffect(() => {
         dispatch(setControls(controls))
-    }, [])
+    }, []);
 
     useEffect(() => {
         dispatch(setPlaying(state.playing))
@@ -83,7 +83,7 @@ function Player() {
                 )}
             </div>
             <div className="max-w-[45.125rem] w-[40%] pt-2 px-4 flex flex-col items-center">
-                <div className="flex items-center gap-x-2">
+                <div className="flex items-center gap-x-3">
                     {/* Play, Pause , Next, Repeat , Shuffle Buttons */}
                     <button className="w-8 h-8 flex items-center justify-center text-opacity-70 hover:text-opacity-100 text-white ">
                         <Icon name="shuffle" size={16} />
@@ -158,9 +158,10 @@ function Player() {
             <div ref={fsRef}>
                 {isFullscreen &&
                     (<FullScreenPlayer
-                        toggle={toggle}
-                        state={ state }
-                        controls={ controls }
+                        toggle = {toggle}
+                        state = { state }
+                        controls = { controls }
+                        VolumeIcon = { VolumeIcon }
                 />)}
             </div>
         </div>
