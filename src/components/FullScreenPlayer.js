@@ -14,9 +14,7 @@ function FullScreenPlayer({ toggle, state, controls, VolumeIcon }) {
             <div className='absolute inset-0 bg-cover object-cover bg-center blur-md opacity-40 ' style={{ backgroundImage: `url(${current.image})` }} />
             {/* ENG: This is the upper section of the audio range bar.*/}
             <div className='absolute top-14 left-16 flex gap-x-2'>
-                <div>
                     <Icon name='spotifyLogo' size={34}/>
-                </div>
                 <div className='flex flex-col text-xs opacity-70'>
                     <div>
                         <p className=''>PLAYING FROM PLAYLIST</p>
@@ -29,7 +27,7 @@ function FullScreenPlayer({ toggle, state, controls, VolumeIcon }) {
                 <div className='self-end'>
                     {/* ENG: This is the song Title & Artist .*/}
                     <h3 className="text-3xl font-bold">{current.title}</h3>
-                    <p className="text-sm font-medium">{current.artist}</p>
+                    <p className="text-sm font-medium opacity-50">{current.artist}</p>
                 </div>
             </div>
             {/* ENG: This is the lower section of the audio range bar.*/}
