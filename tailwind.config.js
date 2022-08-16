@@ -8,6 +8,7 @@ module.exports = {
         primary: '#1db954',
         active: '#282828',
         podcast: '#056952',
+        podcastIcon: '#1ed760',
         link: '#b3b3b3',
         footer: '#181818',
         scroll: '#4D4D4D',

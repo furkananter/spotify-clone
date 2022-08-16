@@ -3,6 +3,7 @@ import CustomRange from '../CustomRange'
 import { useEffect, useMemo, useRef} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setControls, setSidebar , setPlaying} from 'stores/player'
+import Notification from 'components/Notification'
 import { useAudio, useFullscreen, useToggle } from 'react-use'
 import FullScreenPlayer from '../FullScreenPlayer'
 import { secondsToTime } from 'utils'
@@ -52,6 +53,7 @@ function Player() {
 
     return (
         <div className="flex items-center justify-between h-full px-4">
+            <Notification />
             <div className="min-w-[11.25rem] w-[30%]">
                 {current && (
                     <div className="flex items-center ">

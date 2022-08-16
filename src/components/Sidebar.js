@@ -35,6 +35,14 @@ function Sidebar() {
                     Liked Songs
               </a> {/* end of a */}
           </li> {/* end of li */}
+          <li>
+              <a href="" className="py-2 px-6 flex items-center group font-semibold text-sm text-link hover:text-white">
+                <span className="w-6 h-6 flex items-center justify-center mr-4 opacity-60 group-hover:opacity-100 bg-podcast text-podcastIcon rounded-sm">
+                    <Icon name="podcast" size={12}/>
+                </span>
+                    Your Episodes
+              </a> {/* end of a */}
+          </li> {/* end of li */}
         </ul> {/* end of ul */}
       </nav> {/* end of nav */}
 
