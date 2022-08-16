@@ -1,16 +1,15 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import { Icon } from 'Icons'
 import { Dialog } from '@headlessui/react'
 
+// This Component is used for Notification on the bottom right corner of the screen.
+
+// Sağ altta Github ile alakalı gördüğünüz Notifikasyonları göstermek için kullanılır.
+// Headless UI'dan aldım.
+// Ayrıca yıldız almak için yaptım. Aslında bu yoktu, öyle bi içimden geldi aslında bu yoktu 😂
+
 export default function MyDialog() {
     let [isOpen, setIsOpen] = useState(true)
-
-    // create  link for Link react router dom
-    const Links = () => {
-        <NavLink to="/hasdasd" />
-    }
-
 
     return (
         <Dialog
