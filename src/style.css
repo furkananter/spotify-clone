@@ -1514,6 +1514,10 @@ html,  body,  #root {
   padding-top: 100%;
 }
 
+.hover\:flex:hover {
+  display: flex;
+}
+
 .hover\:scale-\[1\.06\]:hover {
   --tw-scale-x: 1.06;
   --tw-scale-y: 1.06;

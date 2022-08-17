@@ -20,9 +20,9 @@ function LikedSongs() {
                     <p>349 Liked Songs</p>
                 </div>
             </div>
-            <div className='relative'>
+            <div className='relative group'>
                 <button
-                    className={`w-12 h-12 rounded-full hover:scale-105 bg-primary text-black absolute group-hover:flex group-focus:flex bottom-0 right-0 flex items-center justify-center shadow-xl }`}>
+                    className={`w-12 h-12 rounded-full hover:scale-105 bg-primary text-black absolute bottom-0 right-0 flex items-center justify-center shadow-xl }`}>
                     <Icon name={'play'} size={24} />
                 </button>
             </div>

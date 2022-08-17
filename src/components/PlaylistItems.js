@@ -1,5 +1,5 @@
 import LikedSongs from 'components/LikedSongs'
-import SongItem from './SongItem'
+import PlaylistSongItem from './PlaylistSongItem'
 import Title from './Title'
 
 //* TR: Playlist Fonksiyonuna bu komponent içerisinden ulaşabilirsiniz.
@@ -13,7 +13,7 @@ function Playlist({ items }) {
             <div className="grid grid-cols-5 gap-8 mb-4">
                 <LikedSongs />
                     {items.map(item => (
-                        <SongItem key={item.id} item={item} />
+                        <PlaylistSongItem key={item.id} item={item} />
                     ))}
                     
             </div>
