@@ -43,9 +43,9 @@ function Menu() {
                      + (isActive ? ' active' : '')}
                 */}
                     <NavLink 
-                        to={"/collection"}
+                        to={"/collection/playlists"}
                         
-                        className={({ isActive }) => "h-10 flex gap-x-4 items-center text-sm font-semibold text-link rounded hover:text-white px-4" + (isActive ? ' active' : '')}>
+                        className={({ isActive }) => "h-10 flex gap-x-4 items-center text-sm font-semibold text-link rounded hover:text-white px-4" + (isActive ? ' active' : ' ')}>
                         <span>
                             <Icon name="collection" />
                         </span>

@@ -16,7 +16,7 @@ function Content(){
             { /* The elements are telling us about direct links */ }
                     <Route exact path="/" element={<Home />} />
                     <Route path="/search" element={<Search />} />
-                    <Route path="/collection" element={<Collection />} />
+                    <Route path="/collection/playlists" element={<Collection />} />
                     
                 </Routes> 
             </div>

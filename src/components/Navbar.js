@@ -1,11 +1,16 @@
 import Navigation from 'components/Navbar/Navigation'
 import Auth from 'components/Navbar/Auth'
 import Search from 'components/Navbar/Search'
+import CollectionNav from 'components/Navbar/CollectionNav'
 import { useMatch } from "react-router-dom";
 
 function Navbar(){
-    const searchRoute = useMatch("/search") 
-    return (
+    const searchRoute = useMatch("/search")
+    const playlistRoute = useMatch("/collection/playlists")  
+    const podcastRoute = useMatch("/collection/podcasts")  
+    const albumRoute = useMatch("/collection/albums")  
+    const artistsRoute = useMatch("/collection/artists")  
+    return (    
         <nav className="h-[3.75rem] flex items-center justify-between px-8">
             <Navigation />
             {/* 
@@ -35,6 +40,10 @@ function Navbar(){
                 
                 */}
             {(searchRoute && <Search />)}
+            {(playlistRoute && <CollectionNav/>)}
+            {(podcastRoute && <CollectionNav />)}
+            {(albumRoute && <CollectionNav />)}
+            {(artistsRoute && <CollectionNav />)}
             <Auth />
         </nav>
     )

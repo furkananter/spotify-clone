@@ -48,7 +48,7 @@ function Search() {
     return (
         <>
             <section className='mb-8'>
-                <Title title={'Your Top Genres'} />
+                <Title size={"text-2xl"} title={'Your Top Genres'} />
                 <div className='relative'>
                 {prev && 
                     <button onClick={slidesFavPrev} className='text-black w-12 h-12 rounded-full bg-white hover:scale-[1.06] flex items-center justify-center absolute -left-6 z-10 top-1/2 -translate-y-1/2'>
@@ -66,7 +66,7 @@ function Search() {
                 </div>
             </section>
             <section>
-                <Title title={'Browse All'} />
+                <Title size={"text-2xl"} title={'Browse All'} />
                 <div className="grid grid-cols-5 gap-6">
                     {categories.map((category, index) => <Category key={index} category={category} />)}
                 </div>

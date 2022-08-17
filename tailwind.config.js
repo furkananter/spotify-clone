@@ -6,13 +6,15 @@ module.exports = {
       colors:{
         backdrop: '#121212',
         primary: '#1db954',
-        active: '#282828',
+        active: '#333',
         podcast: '#056952',
         podcastIcon: '#1ed760',
         link: '#b3b3b3',
         footer: '#181818',
         scroll: '#4D4D4D',
         scrollHover: '#808080',
+        firstGradient: '#450af5',
+        secondGradient: '#8e8ee5',
       },
       fontSize: {
         s: '0.813rem',

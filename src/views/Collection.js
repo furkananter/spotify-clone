@@ -1,9 +1,16 @@
+import playlists from 'data/playlists'
+import Playlist from 'components/PlaylistItems'
+
+
+
+
 function Collection(){
     return (
-        <div>
-            <h1>Collection page will be come here.</h1>
-        </div>
+        <section>
+            <Playlist items={playlists} />
+        </section>
     )
 }
+
 
 export default Collection;
