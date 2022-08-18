@@ -4,7 +4,12 @@ This project was built with ReactJS & TailwindCSS
 
 You can reach this project's link on below:
 
-[Spotify DEMO](https://spotify-clone-mu-five.vercel.app/) 👈🏻
+[Spotify DEMO](https://spotify-clone-mu-five.vercel.app/)👈🏻
+
+Photos:
+- (https://spotify-clone-mu-five.vercel.app/)
+- (https://spotify-clone-mu-five.vercel.app/)
+- (https://spotify-clone-mu-five.vercel.app/)
 
 ## Available Scripts
 
