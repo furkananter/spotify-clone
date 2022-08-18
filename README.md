@@ -7,10 +7,10 @@ You can reach this project's link on below:
 [Spotify DEMO](https://spotify-clone-mu-five.vercel.app/)👈🏻
 
 Photos:
-- (https://spotify-clone-mu-five.vercel.app/)
-- (https://spotify-clone-mu-five.vercel.app/)
-- (https://spotify-clone-mu-five.vercel.app/)
-
+- (https://raw.githubusercontent.com/furkananter/spotify-clone/master/src/img/1.png)
+- (https://raw.githubusercontent.com/furkananter/spotify-clone/master/src/img/2.png)
+- (https://raw.githubusercontent.com/furkananter/spotify-clone/master/src/img/3.png)
+- (https://raw.githubusercontent.com/furkananter/spotify-clone/master/src/img/4.png)
 ## Available Scripts
 
 In the project directory, you need to run:
